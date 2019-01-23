@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mc_styles .css">
+    <link rel="stylesheet" href=" mc_forms.css">
+
+    <script src="mc_script.js"></script>
+</head>
+<header>
+    <img src="mc_logo.png" alt="">
+</header>
+
+<body id="test">
+    <form id="form" action="http://www.mill_computers.com/orders/process.cgi" name="cForm.">
+
+        <!--input puts a box on the website and makes the user type whatever they want but they can not submit it without it -->
+        <section>
+            <label for="firstBox">FirstName</label>
+            <input type="text" id="firstBox" name="fName" required>
+
+            <label for="lastBox">LastName</label>
+            <input type="text" id="lastBox" name="lName" required>
+
+            <label for="streetBox">Address</label>
+            <input type="text" id="streetBox" name="street" required>
+
+
+
+            <label for="cityBox">City</label>
+            <input type="text" id="cityBox" name="city" required>
+
+            <label for="stateBox">States</label>
+            <input type="text" id=" stateBox" name="state " list="stateList" required>
+
+            <label for="zipBox"> ZIP/Postal Code</label>
+            <input type="text" id=" zipBox" name="zip" pattern=" ^\d{5}(-\d{4})?$" required>
+
+
+            <br>
+            <label for="phoneBox">Phone</label>
+
+            <input type="tel" id=" phoneBox" name="phone" pattern=" ^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$ "
+                required>
+            <br>
+            <!--all of the options gives the user to pick the state their from-->
+            <datalist id="stateList">
+                <option value="AL"></option>
+                <option value="AK"></option>
+                <option value="AZ"></option>
+                <option value="AR"></option>
+                <option value="CA"></option>
+                <option value="CO"></option>
+                <option value="CT"></option>
+                <option value="DE"></option>
+                <option value="FL"></option>
+                <option value="GA"></option>
+                <option value="HI"></option>
+                <option value="ID"></option>
+                <option value="IL"></option>
+                <option value="IN"></option>
+                <option value="IA"></option>
+                <option value="KS"></option>
+                <option value="KY"></option>
+                <option value="LA"></option>
+                <option value="ME"></option>
+                <option value="MD"></option>
+                <option value="MA"></option>
+                <option value="MI"></option>
+                <option value="MN"></option>
+                <option value="MO"></option>
+                <option value="MT"></option>
+                <option value="NE"></option>
+                <option value="NV"></option>
+                <option value="NH"></option>
+                <option value="NJ"></option>
+                <option value="NC"></option>
+                <option value="ND"></option>
+                <option value="OH"></option>
+                <option value="OK"></option>
+                <option value="OR"></option>
+                <option value="PA"></option>
+                <option value="RI"></option>
+                <option value="SC"></option>
+                <option value="SD"></option>
+                <option value="TN"></option>
+                <option value="TX"></option>
+                <option value="UT"></option>
+                <option value="VT"></option>
+                <option value="VA"></option>
+                <option value="WA"></option>
+                <option value="WV"></option>
+                <option value="WI"></option>
+                <option value="WY"></option>
+            </datalist>
+            </fieldset>
+
+            <br>
+            <br>
+            <label for="speed"> Processor Speed:</label>
+            <input type="text" id="speed" name="" list="p-speed" />
+            <datalist id="p-speed">
+                <option value=" 3.2 GHz"></option>
+                <option value="4.0 GHz"></option>
+                <option value=" 5.2 GHz "></option>
+
+            </datalist>
+            <br>
+            <br>
+            <div><label for="mem"> Memory: </label>
+                <input type="text" id="mem" name="" list="meme" />
+                <datalist id="meme">
+                    <option value=" 1 GB "></option>
+                    <option value="2 GB"></option>
+                    <option value=" 4 GB "></option>
+                    <option value="8 GB"></option>
+                </datalist></div>
+            <br><br>
+
+
+
+            <div><label for="Drive"> Hard Drive: </label>
+                <input type="text" id="drive" name="" list="hd" />
+                <datalist id="hd">
+                    <option value="  240 GB "></option>
+                    <option value=" 500 GB"></option>
+                    <option value=" 750 GB "></option>
+                    <option value="1 TB"></option>
+                </datalist></div>
+            <br><br>
+
+
+            <div>
+                <label for="">Do you need a DVD burner?</label>
+                <fieldset>
+                    <label for="hYes">Yes</label>
+                    <input type="radio" name="DVD" id="hYes" value="yes" />
+                    <label for="hNo">No</label>
+                    <input type="radio" name="DVD" id="hNo" value="no" />
+                </fieldset>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="">Do you need a Turner Card?</label>
+                <fieldset>
+                    <label for="hYes">Yes</label>
+                    <input type="radio" name="Turner" id="hYes" value="yes" />
+                    <label for="hNo">No</label>
+                    <input type="radio" name="Turner" id="hNo" value="no" />
+                </fieldset>
+            </div>
+
+            <br>
+            <br>
+            <div>
+                <label for="">Do you need a Media Card Reader?</label>
+                <fieldset>
+                    <label for="hYes">Yes</label>
+                    <input type="radio" name="mcard" id="hYes" value="yes" />
+                    <label for="hNo">No</label>
+                    <input type="radio" name="mcard" id="hNo" value="no" />
+                </fieldset>
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+        <div id="buttons">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Canel" />
+        </div>
+    </form>
+
+</body>
+
+</html>

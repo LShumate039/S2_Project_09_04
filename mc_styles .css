@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+
+html {
+    background: url(cds.jpg) repeat;
+}
+
+body#test {
+    background: white;
+    margin-top: 50px;
+    font-size: 21px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+input:focus:not([type='radio']) {
+    background-color: rgb(255, 218, 165);
+}
+
+input:focus:valid:not([type='radio']) {
+    background: rgb(215, 255, 215) url(mc_go.png) no-repeat right;
+}
+
+input:focus:invalid:not([type='radio']) {
+    background: rgb(255, 245, 215) url(mc_stop.png)no-repeat right;
+}
